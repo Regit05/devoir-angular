@@ -12,13 +12,13 @@ const routes: Routes = [
         component: ConnexionComponent
     },
     {
-        path: 'index',
+        path: '',
         component: IndexComponent
     },
     {
         path: 'inscription',
         component: InscriptionComponent
-    }
+    },
 ]
 
 

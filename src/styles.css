@@ -5,3 +5,6 @@ body{
 *{
     color: #fff;
 }
+form input{
+    color: #000;
+}

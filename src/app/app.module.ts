@@ -9,6 +9,8 @@ import { InscriptionComponent } from './pages/inscription/inscription.component'
 import { ConnexionComponent } from './pages/connexion/connexion.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { HeaderComponent } from './pages/layout/header/header.component';
+import { AccountFormComponent } from './account-form/account-form.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -17,11 +19,14 @@ import { HeaderComponent } from './pages/layout/header/header.component';
     IndexComponent,
     InscriptionComponent,
     ConnexionComponent,
-    HeaderComponent
+    HeaderComponent,
+    AccountFormComponent,
   ],
   imports: [
     BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      FormsModule,
+      ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,8 @@ import {AppRoutingModule} from "./app-routing.module";
 import { HeaderComponent } from './pages/layout/header/header.component';
 import { AccountFormComponent } from './account-form/account-form.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ApiService} from "./services/api.service";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -26,9 +28,12 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     BrowserModule,
       AppRoutingModule,
       FormsModule,
-      ReactiveFormsModule
+      ReactiveFormsModule,
+      HttpClientModule
   ],
-  providers: [],
+  providers: [
+      ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

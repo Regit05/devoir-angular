@@ -1,9 +1,9 @@
 export class Account {
     email: string = null;
-    motdepasse: string = null;
+    password: string = null;
 
     constructor(account: any = {}){
         this.email = account.email || null;
-        this.motdepasse = account.motdepasse || null;
+        this.password = account.password || null;
     }
 }
